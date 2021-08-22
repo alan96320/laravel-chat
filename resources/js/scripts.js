@@ -132,11 +132,6 @@ $(function() {
     }).niceScroll();
   }
 
-  $(".main-content").css({
-    minHeight: $(window).outerHeight() - 108,
-    maxHeight: $(window).outerHeight() - 81
-  })
-
   $(".nav-collapse-toggle").click(function() {
     $(this).parent().find('.navbar-nav').toggleClass('show');
     return false;
@@ -363,7 +358,7 @@ $(function() {
         cursoropacitymin: .3,
         cursoropacitymax: .8,
     });
-    $('.chat-content').getNiceScroll(0).doScrollTop($('.chat-content').height());
+    $('.chat-content').scrollTop($('.chat-content').get(0).scrollHeight, -1);
   }
 
   if(jQuery().summernote) {

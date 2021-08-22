@@ -28,6 +28,7 @@ const mixDir = (method, source, output, ignoredFiles = []) => {
 
 mix.copyDirectory('resources/img', 'public/img')
    .copyDirectory('resources/fonts', 'public/fonts')
+   .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts')
    .copyDirectory('node_modules/@popperjs/core/dist/cjs/popper.js.map', 'public/js')
    .copyDirectory('node_modules/summernote/dist/summernote.js.map', 'public/js');
 mixDir('js','resources/js','public/js',[ 'bootstrap.js','popper.js.map']);

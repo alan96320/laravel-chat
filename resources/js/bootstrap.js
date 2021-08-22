@@ -20,6 +20,7 @@ window.simpleweather = require('simpleweather');
 window.summernote = require('summernote');
 window.chocolat = require('chocolat');
 window.select2 = require('select2');
+window.sweetalert = require('sweetalert');
 
 
 /**

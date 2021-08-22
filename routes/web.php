@@ -15,8 +15,17 @@ use App\Http\Controllers\chatController;
 Route::get('/', [chatController::class, 'jabbim']);
 Route::get('/wa', [chatController::class, 'wa']);
 Route::get('/tele', [chatController::class, 'tele']);
+Route::get('/listChat/{target}/{nomor}', [chatController::class, 'chat']);
 
-Route::get('/chat',[chatController::class, 'getmessage']);
+Route::get('/testing/{id}/{pesan}',[chatController::class, 'sendProvider']);
+
+Route::get('/chat/{id}/{idkontak}',[chatController::class, 'getmessage']);
 Route::post('/chat',[chatController::class, 'save']);
+Route::get('/contack/{id}',[chatController::class, 'getContak']);
+Route::post('/addContack',[chatController::class, 'addContak']);
+Route::put('/deleteContack/{id}', [chatController::class, 'updateContak']);
+Route::get('/deleteContack/{id}', [chatController::class, 'deleteContak']);
+Route::get('/clearChat/{id}', [chatController::class, 'clearChat']);
+
 
 

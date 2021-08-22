@@ -9,5 +9,5 @@ class outbox extends Model
 {
     protected $table = 'outbox';
     protected $primaryKey = 'kode';
-    // public $timestamps = false;
+    public $timestamps = false;
 }

@@ -10,7 +10,7 @@ class inbox extends Model
 {
     protected $table = 'inbox';
     protected $primaryKey = 'kode';
-    // public $timestamps = false;
+    public $timestamps = false;
 
     public function outbox()
     {
